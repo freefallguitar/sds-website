@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simon's Designs</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <script src="/public/javascript/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <h1>Simon's Designs</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/public/index.html">Home</a></li>
+          <li><a href="/public/html/gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h2>Welcome to Simon's Designs</h2>
+        <p>Custom 3D printing, laser engraving, and mug sublimation</p>
+        <a href="/public/html/gallery.html" class="btn">View Our Gallery</a>
+      </div>
+      <div class="hero-slider">
+        <img
+          src="/public/images/SauronMask.jpg"
+          class="hero-slide"
+          alt="Image 1"
+        />
+        <img
+          src="/public/images/D3Print.jpg"
+          class="hero-slide"
+          alt="Image 2"
+        />
+        <img
+          src="/public/images/laser-engraving.jpg"
+          class="hero-slide"
+          alt="Image 3"
+        />
+      </div>
+      <!-- Fixed image for desktop -->
+      <div class="hero-desktop"></div>
+    </section>
+
+    <!-- New Products Section -->
+    <section class="new-products">
+      <h2>New Products</h2>
+      <div class="product-slider">
+        <button class="arrow prev">&lt;</button>
+        <div class="slider-content">
+          <div class="product">
+            <img src="images/product1.jpg" alt="Product 1" />
+            <h3>Product 1</h3>
+          </div>
+          <div class="product">
+            <img src="images/product2.jpg" alt="Product 2" />
+            <h3>Product 2</h3>
+          </div>
+          <div class="product">
+            <img src="images/product3.jpg" alt="Product 3" />
+            <h3>Product 3</h3>
+          </div>
+        </div>
+        <!--slider content end-->
+        <button class="arrow next">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Trending Categories Section -->
+    <section class="trending-categories">
+      <h2>Trending Categories</h2>
+      <div class="category-list">
+        <div class="category">
+          <img src="/public/images/SauronMask.jpg" alt="Category 1" />
+          <p>3D Printing</p>
+        </div>
+        <div class="category">
+          <img src="/images/laser-engraving.jpg" alt="Category 2" />
+          <p>Laser Engraving</p>
+        </div>
+        <div class="category">
+          <img src="/images/mug-sublimation.jpg" alt="Category 3" />
+          <p>Mug Sublimation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        We are Simon's Designs, a small business specializing in personalized 3D
+        printing, laser engraving, and mug sublimation. Our goal is to create
+        high-quality, unique products that are tailored to your needs. Whether
+        you’re looking for a gift, business branding, or something truly
+        one-of-a-kind, we bring your ideas to life.
+      </p>
+      <p>
+        Founded in 2023, Simon's Designs has quickly become a trusted name for
+        high-quality customized products. Every design is crafted with care and
+        precision, ensuring you get the perfect personalized product every time.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Simon's Designs. All Rights Reserved.</p>
+    </footer>
+    <a href="/public/html/admin.html">admin</a>
+  </body>
+</html>

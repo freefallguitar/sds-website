@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "name": "Sauron Mask",
+    "image": "/public/images/3d-printing.jpg",
+    "category": "Bambu",
+    "subcategory": "Masks",
+    "description": "Detailed Sauron mask.",
+    "estimatedCost": 15
+  },
+  {
+    "id": 3,
+    "name": "Iron Man Helmet",
+    "image": "/public/images/iron-man-helmet.jpg",
+    "category": "Marvel",
+    "subcategory": "Helmets",
+    "description": "High-quality Iron Man helmet.",
+    "estimatedCost": 45
+  }
+]

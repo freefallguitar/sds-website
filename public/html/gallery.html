@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="controls">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="name">Name</option>
+        <option value="category">Category</option>
+        <option value="subcategory">Subcategory</option>
+      </select>
+
+      <label for="filterCategory">Filter by Category:</label>
+      <select id="filterCategory">
+        <option value="">All</option>
+        <option value="Bambu">3D</option>
+        <!-- Categories dynamically populated by JavaScript -->
+      </select>
+
+      <label for="filterSubcategory">Filter by Subcategory:</label>
+      <select id="filterSubcategory">
+        <option value="">All</option>
+        <!-- Subcategories dynamically populated by JavaScript -->
+      </select>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <!-- Product cards will be dynamically added here -->
+    </section>
+  </main>
+  <script src="../javascript/gallery.js"></script>
+</body>
+</html>

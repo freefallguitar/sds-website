@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff5722;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Product Details Section */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-details img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff5722;
+}
+
+.product-details p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-details .category {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Slideshow */
+.slideshow {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.slideshow img.active {
+  display: block;
+}
+
+.slideshow-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.slideshow-controls button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slideshow-controls button:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.visible {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .product-details {
+    padding: 1rem;
+  }
+}
